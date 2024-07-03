@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h1 class="text-center">New Restaurant</h1>
+
+      <%= render 'form', restaurant: @restaurant do %>
+        <div class="text-center">
+          <%= link_to 'Back', restaurants_path, class: 'btn btn-primary mt-3' %>
+          <%= f.submit 'Create', class: 'btn btn-primary mt-3' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
